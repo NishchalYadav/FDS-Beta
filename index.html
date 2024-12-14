@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta (Testing) Access</title>
+    <link rel="stylesheet" href="/beta.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Beta Testing Access</h1>
+            <p>Please enter your team username and password to proceed.</p>
+            <form id="beta-testing-form">
+                <div class="input-box">
+                    <label for="username">Team Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Team Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <input type="button" class="btn" onclick="login ()" id="submit" value="Access Beta">
+            </form>
+            <p class="error-message" id="error-message" style="display: none;">Invalid credentials. Please try again.</p>
+        </div>
+    </div>
+    <script src="/beta.js"></script>
+</body>
+</html>
