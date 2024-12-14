@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/study centre/css/JapaneseQuiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Japanese Quiz</h1>
+        <p>Select your level:</p>
+        <div class="level-buttons">
+            <button onclick="startQuiz('beginner')">Beginner</button>
+            <button onclick="startQuiz('intermediate')">Intermediate</button>
+            <button onclick="startQuiz('advanced')">Advanced</button>
+        </div>
+        <div id="quiz" class="hidden">
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <div id="answers"></div>
+            </div>
+            <button id="next-btn" class="hidden" onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Your Score: <span id="score"></span>/<span id="total"></span></h2>
+            <button onclick="restartQuiz()">Restart</button>
+        </div>
+    </div>
+
+    <script src="/study centre/js/JapaneseQuiz.js"></script>
+</body>
+</html>
