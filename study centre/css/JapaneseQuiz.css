@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #dd5a44, #111);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    text-align: center;
+    background: #f5ebe9;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #dd5a44;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #dd5a44;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #c44a37;
+}
+
+.hidden {
+    display: none;
+}
+
+#answers {
+    margin-top: 20px;
+}
+
+.answer {
+    display: block;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #f5ebe9;
+    margin: 10px auto;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.answer:hover {
+    background-color: #666;
+}
+
+#result h2 {
+    margin-bottom: 20px;
+}
+
+#result button {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .answer {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .answer {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
